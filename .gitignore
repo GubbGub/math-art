@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter / editor artifacts
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local output folders if you add them later
+output/
+frames/
+render/
+
+# Keep the main showcase images tracked
+!aizawa_wallpaper.png
+!aizawa_wallpaper_retina.png

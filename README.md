@@ -1,58 +1,92 @@
 # Math Art
 
-A growing collection of generative mathematical illustrations and wallpapers inspired by dynamical systems, attractors, and computational aesthetics.
+A collection of generative artworks built from mathematical systems, dynamical equations, and computational visualization.
 
-This repository currently includes an Aizawa attractor wallpaper rendered in a clean, high-contrast blue palette.
+This project explores the beauty of chaos, flow fields, attractors, and emergent structure through code. Each piece starts from a mathematical model and is rendered into an image or animation that feels both scientific and artistic.
 
-## Current piece
+## Featured work
 
-- `aizawa_wallpaper.py` — generates the wallpaper and saves a high-resolution render
-- `aizawa_wallpaper.png` — output image
-- `aizawa_wallpaper_retina.png` — higher-density export
+### Aizawa attractor wallpaper
 
-## What this project is about
+The current piece in the repository is an Aizawa attractor rendered as a dark blue, high-contrast wallpaper.
 
-The goal is to explore the intersection of:
+- `aizawa_wallpaper.py` — generates the visualization
+- `aizawa_wallpaper.png` — standard export
+- `aizawa_wallpaper_retina.png` — higher-resolution export
 
-- dynamical systems
-- chaos theory
+The system is defined by a set of chaotic differential equations and plotted in 3D, creating a dense ribbon-like structure that resembles a glowing orbital sketch.
+
+## Why this project exists
+
+These artworks sit at the intersection of:
+
+- nonlinear dynamics
+- chaotic systems
 - geometry
-- visual design
-- computational art
+- computational aesthetics
+- visual experimentation
 
-These pieces are generated procedurally using Python and scientific plotting libraries, and they are designed to feel both mathematical and artistic.
-
-## Requirements
-
-Install the Python dependencies:
-
-```bash
-pip install numpy scipy matplotlib
-```
-
-## Run it locally
-
-```bash
-python aizawa_wallpaper.py
-```
-
-This will generate the wallpaper image in the project directory.
+The goal is not just to produce pretty outputs, but to study how mathematical rules create forms, motion, and texture that feel alive.
 
 ## Project structure
 
 ```text
 math-art/
 ├── README.md
+├── .gitignore
 ├── aizawa_wallpaper.py
 ├── aizawa_wallpaper.png
 ├── aizawa_wallpaper_retina.png
-└── .gitignore (optional future addition)
+└── future pieces...
 ```
 
-## Notes
+## Setup
 
-This repo is meant to expand over time. The idea is to add more mathematically generated visual studies, each with its own script, output, and brief description.
+Install dependencies:
+
+```bash
+pip install numpy scipy matplotlib
+```
+
+Generate the current image:
+
+```bash
+python aizawa_wallpaper.py
+```
+
+## Can we make these animated?
+
+Yes — absolutely.
+
+These kinds of systems are especially well-suited to animation because they evolve over time. The most natural approach is to render a sequence of frames while the system or camera moves through the attractor, then combine them into a video.
+
+A few ideas:
+
+- rotate the 3D camera slowly around the attractor
+- increase the number of plotted points over time
+- fade the trail length in and out
+- animate parameter changes to morph between shapes
+- accumulate multiple passes for a glowing, cinematic effect
+
+For example, a script could:
+
+1. simulate the system over a time window
+2. plot a subset of the trajectory for each frame
+3. save each frame as an image
+4. stitch them together with `ffmpeg` or Python video tools
+
+This would turn a static wallpaper into a looping generative motion study.
+
+## Future direction
+
+This repo is intended to grow into a small collection of different systems and visual styles, including:
+
+- Lorenz and Rossler attractors
+- strange attractors with different color palettes
+- animated loops
+- wallpaper exports
+- abstract parameter studies
 
 ## License
 
-This project is for personal / educational exploration. If you plan to reuse or adapt the artwork, feel free to credit the project and the author.
+This project is intended for personal, artistic, and educational exploration. If you reuse any of the visuals, please credit the project and original author.
