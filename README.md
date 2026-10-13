@@ -4,7 +4,7 @@ A collection of generative artworks built from mathematical systems, dynamical e
 
 This project explores the beauty of chaos, flow fields, attractors, and emergent structure through code. Each piece starts from a mathematical model and is rendered into an image or animation that feels both scientific and artistic.
 
-## Featured work
+## Featured works
 
 ### Aizawa attractor wallpaper
 
@@ -15,6 +15,16 @@ The current piece in the repository is an Aizawa attractor rendered as a dark bl
 - `aizawa_wallpaper_retina.png` — higher-resolution export
 
 The system is defined by a set of chaotic differential equations and plotted in 3D, creating a dense ribbon-like structure that resembles a glowing orbital sketch.
+
+### Clifford attractor wallpaper
+
+A second piece in the collection uses the Clifford attractor system, producing a denser and more floral, neon-like structure with a darker palette and vividly saturated tones.
+
+- `clifford_attractor.py` — generates the visualization
+- `clifford_wallpaper.png` — standard export
+- `clifford_wallpaper_retina.png` — higher-resolution export
+
+The Clifford attractor is governed by a nonlinear pair of equations that create intricate looping patterns and a rich sense of motion even in a static render.
 
 ## Why this project exists
 
@@ -37,6 +47,9 @@ math-art/
 ├── aizawa_wallpaper.py
 ├── aizawa_wallpaper.png
 ├── aizawa_wallpaper_retina.png
+├── clifford_attractor.py
+├── clifford_wallpaper.png
+├── clifford_wallpaper_retina.png
 └── future pieces...
 ```
 
@@ -52,6 +65,12 @@ Generate the current image:
 
 ```bash
 python aizawa_wallpaper.py
+```
+
+Generate the Clifford attractor image:
+
+```bash
+python clifford_attractor.py
 ```
 
 ## Can we make these animated?
